@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+DDYMax-iOS
                        DESC
 
-  s.homepage         = 'https://github.com/Yang-Jie-9/DDYMaxPodLib'
+  s.homepage         = 'https://www.baidu.com'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Yang-Jie-9' => 'yangjie@pointone.tech' }
-  s.source           = { :git => 'https://github.com/Yang-Jie-9/DDYMaxPodLib.git', :tag => s.version.to_s }
+  s.source           = { :git => 'git@git.yangjie.link:Games/ddy/DDYMaxPodLib.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'

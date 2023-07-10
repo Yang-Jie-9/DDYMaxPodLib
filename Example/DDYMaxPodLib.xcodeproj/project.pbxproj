@@ -37,11 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C5D61FEB69CF412BE076C90 /* DDYMaxPodLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DDYMaxPodLib.podspec; path = ../DDYMaxPodLib.podspec; sourceTree = "<group>"; };
+		0C5D61FEB69CF412BE076C90 /* DDYMaxPodLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DDYMaxPodLib.podspec; path = ../DDYMaxPodLib.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1F48F69D25292A34D62A0796 /* Pods-DDYMaxPodLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDYMaxPodLib_Example.release.xcconfig"; path = "Target Support Files/Pods-DDYMaxPodLib_Example/Pods-DDYMaxPodLib_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1F73F0A9ED43358110842EF9 /* Pods-DDYMaxPodLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDYMaxPodLib_Example.debug.xcconfig"; path = "Target Support Files/Pods-DDYMaxPodLib_Example/Pods-DDYMaxPodLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		27DD005E0D89749D974962F2 /* Pods_DDYMaxPodLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDYMaxPodLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		44F483E23FA65207788E5455 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		44F483E23FA65207788E5455 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* DDYMaxPodLib_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDYMaxPodLib_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,7 +62,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		80F8BFF9159519F62BE7C956 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		80F8BFF9159519F62BE7C956 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D9645E7480F2E6D05BB2435 /* Pods-DDYMaxPodLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDYMaxPodLib_Tests.release.xcconfig"; path = "Target Support Files/Pods-DDYMaxPodLib_Tests/Pods-DDYMaxPodLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9BAFFE9546FFCEBF21A84D7A /* Pods-DDYMaxPodLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDYMaxPodLib_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DDYMaxPodLib_Tests/Pods-DDYMaxPodLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -193,7 +193,6 @@
 				9BAFFE9546FFCEBF21A84D7A /* Pods-DDYMaxPodLib_Tests.debug.xcconfig */,
 				8D9645E7480F2E6D05BB2435 /* Pods-DDYMaxPodLib_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +207,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				FACB53010BACECAA26493FC5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -362,24 +361,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FACB53010BACECAA26493FC5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DDYMaxPodLib_Example/Pods-DDYMaxPodLib_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DDYMaxPodLib/DDYMaxPodLib.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DDYMaxPodLib.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DDYMaxPodLib_Example/Pods-DDYMaxPodLib_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

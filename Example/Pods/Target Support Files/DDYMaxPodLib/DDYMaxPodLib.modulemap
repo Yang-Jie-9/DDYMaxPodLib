@@ -1,0 +1,6 @@
+framework module DDYMaxPodLib {
+  umbrella header "DDYMaxPodLib-umbrella.h"
+
+  export *
+  module * { export * }
+}
